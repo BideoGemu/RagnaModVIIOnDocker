@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  mc:
+    restart: unless-stopped
+    container_name: minecraft-rm7
+    image: itzg/minecraft-server:java17-jdk
+    volumes:
+      - ./files:/data
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      TYPE: FORGE
+      DEBUG: "false"
+      VERSION: "1.18.2"
+      FORGEVERSION: "40.2.9"
+      MEMORY: "10G"
+      OPS: ""
+      ALLOW_FLIGHT: "true"
+      MOTD: "RagnaMod-VII by MLDEG Server On Docker"
+    tty: true
+    stdin_open: true
+
+volumes:
+  files: {}
