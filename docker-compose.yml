@@ -14,7 +14,7 @@ services:
       TYPE: FORGE
       DEBUG: "false"
       VERSION: "1.18.2"
-      FORGEVERSION: "40.2.9"
+      FORGEVERSION: "40.2.17"
       MEMORY: "10G"
       OPS: ""
       ALLOW_FLIGHT: "true"
